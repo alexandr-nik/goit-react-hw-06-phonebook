@@ -1,16 +1,19 @@
-export const App = () => {
+import { ContactsForm } from './ContactForm';
+import { Contacts } from './Contacts';
+import { AppBlock } from './App.styled';
+import { Section } from './Section';
+import { ContactsFilter } from './ContactsFilter';
+
+export function App() { 
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      goit-react-hw-06-phonebook
-    </div>
+    <AppBlock>
+      <ContactsForm  />
+      <Section title="Contacts">
+        <ContactsFilter  />
+        <Contacts  
+        />
+      </Section>
+    </AppBlock>
   );
-};
+}
+
