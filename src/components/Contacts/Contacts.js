@@ -14,6 +14,7 @@ export const Contacts = () => {
   const contacts = useSelector(getContacts) 
   const filter = useSelector(getFilter)
 
+
   const findFilterContact = () => {
     const filterName = filter.trim().toLowerCase();
     return contacts.filter(elem =>
