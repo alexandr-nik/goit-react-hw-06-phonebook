@@ -9,8 +9,8 @@ import {
   PhonebookInput,
   PhonebookButton,
 } from './ContactForm.styled';
-import { addNewContact } from 'components/redux/contactsSlice';
-import { getContacts } from 'components/redux/selector';
+import { addNewContact } from 'redux/contactsSlice';
+import { getContacts } from 'redux/selector';
 
 export const ContactsForm = () => {
   const contacts = useSelector(getContacts) 
